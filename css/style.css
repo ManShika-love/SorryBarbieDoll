@@ -1,0 +1,91 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Segoe UI, sans-serif;
+background:linear-gradient(135deg,#ff758c,#ff7eb3);
+min-height:100vh;
+padding:30px 15px;
+overflow-x:hidden;
+}
+
+.container{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+/* intro */
+
+.intro{
+background:white;
+padding:25px;
+border-radius:16px;
+box-shadow:0 15px 30px rgba(0,0,0,0.25);
+text-align:center;
+}
+
+.intro h1{
+color:#ff3b66;
+margin-bottom:10px;
+}
+
+/* cards */
+
+.card{
+background:white;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 15px 30px rgba(0,0,0,0.25);
+}
+
+.card img{
+width:100%;
+display:block;
+}
+
+.card p{
+padding:15px;
+text-align:center;
+font-size:15px;
+}
+
+/* message */
+
+.message{
+background:white;
+padding:22px;
+border-radius:16px;
+text-align:center;
+box-shadow:0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* ending */
+
+.ending{
+text-align:center;
+color:white;
+font-size:20px;
+margin-top:10px;
+}
+
+/* floating hearts */
+
+.heart{
+position:fixed;
+top:100vh;
+pointer-events:none;
+animation:float linear infinite;
+z-index:10;
+}
+
+@keyframes float{
+0%{transform:translateY(0);opacity:0}
+10%{opacity:1}
+100%{transform:translateY(-120vh);opacity:0}
+}
